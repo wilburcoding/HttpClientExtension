@@ -1,0 +1,31 @@
+{
+  "name": "HTTP Client Extension",
+  "description": "A starter template for a Replit Extension with Vanilla JavaScript",
+  "tools": [
+    {
+      "name": "HTTP Client",
+      "icon": "/httpclient.jpg",
+      "handler": "/"
+    }
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "icon": "/httpclient.jpg",
+  features: [
+
+    {
+      title: "GET and POST request support",
+      body: "Send both GET and POST requests",
+      image: null
+    },
+
+    {
+    title: "Headers and Params support",
+    body: "Customize your request with headers and parameters!",
+    image: null
+  }
+
+  ],
+  longDescription: "A simple HTTP Client extension to make HTTP Requests"
+}

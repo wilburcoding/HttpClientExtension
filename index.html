@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- Loads the Extensions API -->
+  <script src="https://unpkg.com/@replit/extensions@1.8.0/dist/index.global.js"></script>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.28.0/ace.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <h1>HTTP Client Extension</h1>
+  <p id="error">An error occured</p>
+  <div id="pbar">
+    <select name="type" id="type">
+      <option value="get">GET</option>
+      <option value="post">POST</option>
+    </select>
+    <input type="text" id="url" value="https://" placeholder="Enter a site">
+    <button id="send">Send</button>
+
+  </div>
+  <div id="action" class="headers">
+    <div id="action_bar">
+      <input type="text" id="hn" style="color:#f2bb6e" placeholder="Header Name"><input type="text" id="hv"
+        style="color:#d1d1d1;font-style:italic" placeholder="Header Value">
+      <button id="addh">Add</button>
+
+    </div>
+    <hr>
+  </div>
+  <div id="action" class="params">
+    <div id="action_bar">
+      <input type="text" id="pn" style="color:#f2bb6e" placeholder="Params Name"><input type="text" id="pv"
+        style="color:#d1d1d1;font-style:italic" placeholder="Params Value">
+      <button id="addp">Add</button>
+    </div>
+    <hr>
+  </div>
+  <div class= "ediv" id="action">
+    <div id="action_bar">
+      <p>Request Body</p>
+
+    </div>
+    <hr>
+    <div id="editor">{
+
+}</div>
+
+  </div>
+  <div id="action">
+    <div id="action_bar">
+      <p>Request Response</p>
+
+    </div>
+    <hr>
+    <p id="response"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
